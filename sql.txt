@@ -1,0 +1,17 @@
+
+    CREATE TABLE Users(
+        name VARCHAR(128),
+        email VARCHAR(128)
+    )
+
+create
+    INSERT INTO Users (name, email) VALUES ('Kumar', 'gaurav.ac.kumar@oracle.com')
+
+read
+    SELECT * FROM Users ORDER by name
+
+update
+    UPDATE Users SET email='kiev@gmail.com' WHERE name='Kiev'
+
+delete
+    DELETE FROM Users WHERE name='Kumar'
